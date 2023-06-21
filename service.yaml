@@ -8,7 +8,7 @@ metadata:
   namespace: thitipun-react
 spec:
   ports:
-  - name: 8080-3000
+  - name: 8080-80
     port: 8080
     protocol: TCP
     targetPort: 80
