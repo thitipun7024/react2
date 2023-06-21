@@ -12,7 +12,7 @@ export default function UserUpdate() {
   const { id } = useParams();
   const [result, setUsers] = useState([])
   useEffect(() => {
-    fetch("http://localhost:3335/updateuser/"+id ,{
+    fetch("http://localhost:3333/updateuser/"+id ,{
         method: 'POST',
         })
       .then(res => res.json())
@@ -36,7 +36,7 @@ export default function UserUpdate() {
       avatar: data.get("avatar"),
       id: id,
     }
-    fetch('http://localhost:3335/update', {
+    fetch('http://localhost:3333/update', {
       method: 'POST',
       headers: {
         Accept: 'application/form-data',

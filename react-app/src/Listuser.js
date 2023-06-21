@@ -25,7 +25,7 @@ export default function UserList() {
   }, [])
   
   const UsersGet = () => {
-    fetch("http://localhost:3335/listuser")
+    fetch("http://localhost:3333/listuser")
       .then(res => res.json())
       .then(
         (result) => {
@@ -42,7 +42,7 @@ export default function UserList() {
     var data = {
       'id': id
     }
-    fetch('http://localhost:3335/delete', {
+    fetch('http://localhost:3333/delete', {
       method: 'DELETE',
       headers: {
         Accept: 'application/form-data',
