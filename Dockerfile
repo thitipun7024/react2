@@ -1,12 +1,23 @@
-FROM nginx:alpine
-RUN apk add bash ###Solution: Make use of apk add to install packages on Alpine.
-RUN apk update && apk upgrade --no-cache
-RUN apk add --update nodejs yarn
+# Base image
+FROM node:14-alpine
 
-#RUN npm run build
+# Set the working directory in the container
+WORKDIR /app
 
-COPY ./ /usr/share/nginx/html/react2
+# Copy package.json and package-lock.json to the working directory
+COPY package*.json ./
 
-WORKDIR /usr/share/nginx/html/react2
-RUN yarn install 
-CMD yarn start
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application code
+COPY . .
+
+# Build the React app
+RUN npm run build
+
+# Expose the port on which the app will run (default for React is 3000)
+EXPOSE 3000
+
+# Define the command to start the app
+CMD ["npm", "start"]
