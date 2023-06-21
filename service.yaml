@@ -11,7 +11,7 @@ spec:
   - name: 8080-3000
     port: 8080
     protocol: TCP
-    targetPort: 3000
+    targetPort: 80
   selector:
     app: react2
   type: ClusterIP
