@@ -14,7 +14,7 @@ spec:
             name: react2
             port:
               number: 8080
-        path: /react2/
+        path: /react2
         pathType: Prefix
 status:
   loadBalancer: {}

@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - image: thitipun7024/react2
-        name: react2
+        name: latest
         resources: {}
 status: {}
