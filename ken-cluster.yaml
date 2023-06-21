@@ -20,7 +20,7 @@ clusters:
 users:
 - name: "ken-cluster"
   user:
-    token: "kubeconfig-u-5f4vrl8bbz:bhxhsvz8mhvk6ftglxt5bph77bn9crkvnvjpv2vrsq6bsznct7vkj8"
+    token: "kubeconfig-u-lxw2596h92:cbn44h2qxsjhb44f25wpzq94j5hcvqv8q5h86l2j7565ctnjb4mdgz"
 
 
 contexts:
