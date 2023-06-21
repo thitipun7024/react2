@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "ken-cluster"
+  cluster:
+    server: "https://192.168.10.44/k8s/clusters/c-m-s88czcvc"
+    certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJ2VENDQ\
+      VdPZ0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQkdNUnd3R2dZRFZRUUtFeE5rZVc1aGJXbGoKY\
+      kdsemRHVnVaWEl0YjNKbk1TWXdKQVlEVlFRRERCMWtlVzVoYldsamJHbHpkR1Z1WlhJdFkyRkFNV\
+      Fk0TlRRegpPVEl6TmpBZUZ3MHlNekExTXpBd09UTXpOVFphRncwek16QTFNamN3T1RNek5UWmFNR\
+      Vl4SERBYUJnTlZCQW9UCkUyUjVibUZ0YVdOc2FYTjBaVzVsY2kxdmNtY3hKakFrQmdOVkJBTU1IV\
+      1I1Ym1GdGFXTnNhWE4wWlc1bGNpMWoKWVVBeE5qZzFORE01TWpNMk1Ga3dFd1lIS29aSXpqMENBU\
+      VlJS29aSXpqMERBUWNEUWdBRTI0VWdxVTdleGg3KwpVbGpYOTVCTVZWcEdNOVRHbm1Cc1cxZlN2U\
+      1FHb1p2K0NsZDJrYkNYUTc5MHdsWVVmVVF6TFZrRVYzOTVkYVBaClNWdHpBR0t4d2FOQ01FQXdEZ\
+      1lEVlIwUEFRSC9CQVFEQWdLa01BOEdBMVVkRXdFQi93UUZNQU1CQWY4d0hRWUQKVlIwT0JCWUVGR\
+      E9aMHpoRTJqQzBkZlRYMzV2ZVVhaUlNem1NTUFvR0NDcUdTTTQ5QkFNQ0EwZ0FNRVVDSVFESQplR\
+      E5FMTJYWnpKaGp5K0RUSDhMTzMyUnJFT3JEVUM4d3lvTjBhWVhHa0FJZ1ZuZTZieWxEQ0hnc3Vub\
+      2JBVFp0ClBGQkcxem1Nc1hDVW14Szk5K3UvMm00PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0t"
+
+users:
+- name: "ken-cluster"
+  user:
+    token: "kubeconfig-u-5f4vrl8bbz:bhxhsvz8mhvk6ftglxt5bph77bn9crkvnvjpv2vrsq6bsznct7vkj8"
+
+
+contexts:
+- name: "ken-cluster"
+  context:
+    user: "ken-cluster"
+    cluster: "ken-cluster"
+
+current-context: "ken-cluster"
