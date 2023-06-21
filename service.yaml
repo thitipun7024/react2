@@ -3,17 +3,17 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: thitipun
-  name: thitipun
-  namespace: thitipun-dev
+    app: react2
+  name: react2
+  namespace: thitipun-react
 spec:
   ports:
-  - name: 80-80
-    port: 80
+  - name: 8080-80
+    port: 8080
     protocol: TCP
     targetPort: 80
   selector:
-    app: thitipun
+    app: react2
   type: ClusterIP
 status:
   loadBalancer: {}
