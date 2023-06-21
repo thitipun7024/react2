@@ -8,10 +8,10 @@ metadata:
   namespace: thitipun-react
 spec:
   ports:
-  - name: 8080-80
+  - name: 8080-3000
     port: 8080
     protocol: TCP
-    targetPort: 80
+    targetPort: 3000
   selector:
     app: react2
   type: ClusterIP
